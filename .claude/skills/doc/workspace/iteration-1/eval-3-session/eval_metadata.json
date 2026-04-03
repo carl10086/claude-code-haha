@@ -1,0 +1,31 @@
+{
+  "eval_id": 3,
+  "eval_name": "session-sequence",
+  "prompt": "我想看懂 src/agent/session.ts 的执行流程，帮我生成文档和时序图",
+  "assertions": [
+    {
+      "id": "has-overview",
+      "text": "包含概述部分",
+      "passed": null,
+      "evidence": null
+    },
+    {
+      "id": "has-sequence-diagram",
+      "text": "包含 mermaid 时序图",
+      "passed": null,
+      "evidence": null
+    },
+    {
+      "id": "mentions-sessionstore",
+      "text": "正确识别 SessionStore 类",
+      "passed": null,
+      "evidence": null
+    },
+    {
+      "id": "describes-flow",
+      "text": "描述了执行流程",
+      "passed": null,
+      "evidence": null
+    }
+  ]
+}

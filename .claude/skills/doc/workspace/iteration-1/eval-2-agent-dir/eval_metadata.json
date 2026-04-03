@@ -1,0 +1,31 @@
+{
+  "eval_id": 2,
+  "eval_name": "agent-directory",
+  "prompt": "分析一下整个 src/agent 目录的代码结构，画出架构图和流程图",
+  "assertions": [
+    {
+      "id": "has-directory-structure",
+      "text": "包含目录结构说明",
+      "passed": null,
+      "evidence": null
+    },
+    {
+      "id": "has-class-diagram",
+      "text": "包含类图",
+      "passed": null,
+      "evidence": null
+    },
+    {
+      "id": "has-flowchart",
+      "text": "包含流程图",
+      "passed": null,
+      "evidence": null
+    },
+    {
+      "id": "describes-modules",
+      "text": "描述了多个模块",
+      "passed": null,
+      "evidence": null
+    }
+  ]
+}

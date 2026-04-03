@@ -1,0 +1,23 @@
+{
+  "skill_name": "doc",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我看看 src/agent/agent.ts 这个文件是做什么的，生成一下文档和类图",
+      "expected_output": "markdown 文档包含文件概述、核心功能说明、类型定义，以及 mermaid 类图展示类型关系",
+      "files": ["src/agent/agent.ts"]
+    },
+    {
+      "id": 2,
+      "prompt": "分析一下整个 src/agent 目录的代码结构，画出架构图和流程图",
+      "expected_output": "项目级 markdown 文档，包含目录结构、模块划分、mermaid 类图和流程图",
+      "files": ["src/agent/"]
+    },
+    {
+      "id": 3,
+      "prompt": "我想看懂 src/agent/session.ts 的执行流程，帮我生成文档和时序图",
+      "expected_output": "markdown 文档包含文件概述、函数说明、mermaid 时序图展示调用流程",
+      "files": ["src/agent/session.ts"]
+    }
+  ]
+}

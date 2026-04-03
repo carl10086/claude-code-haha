@@ -1,0 +1,25 @@
+{
+  "eval_id": 1,
+  "eval_name": "agent-single-file",
+  "prompt": "帮我看看 src/agent/agent.ts 这个文件是做什么的，生成一下文档和类图",
+  "assertions": [
+    {
+      "id": "has-markdown-structure",
+      "text": "包含 Markdown 标题结构（概述、类图等）",
+      "passed": null,
+      "evidence": null
+    },
+    {
+      "id": "has-mermaid-class-diagram",
+      "text": "包含 mermaid 类图",
+      "passed": null,
+      "evidence": null
+    },
+    {
+      "id": "mentions-agentservice",
+      "text": "正确识别 AgentService 类",
+      "passed": null,
+      "evidence": null
+    }
+  ]
+}
