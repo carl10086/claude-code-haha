@@ -30,11 +30,11 @@ type Message = ProcessUserInputBaseResult['messages'][number]
 
 /** Edit these knobs between debug sessions (no CLI). */
 const INPUT =
-  'Explain how the queryLoop in this repository processes a single user turn.'
+  '/Users/carlyu/soft/projects/claude-code-haha/README.md 总结一下'
 /** When true, skip `query()` after preprocessing (fast, no API stream). */
 const STOP_AFTER_PREPROCESS = false
 /** Stop after this many `query` stream events; `0` or `Infinity` = no cap. */
-const MAX_EVENTS = 20
+const MAX_EVENTS = 100000
 
 const inspect = (value: unknown, options?: { depth?: number; colors?: boolean }) =>
   Bun.inspect(value, options)

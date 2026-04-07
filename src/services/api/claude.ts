@@ -552,6 +552,7 @@ export async function verifyApiKey(
         async anthropic => {
           const messages: MessageParam[] = [{ role: 'user', content: 'test' }]
           // biome-ignore lint/plugin: API key verification is intentionally a minimal direct call
+          debugger
           await anthropic.beta.messages.create({
             model,
             max_tokens: 1,
@@ -851,6 +852,7 @@ export async function* executeNonStreamingRequest(
     async (anthropic, attempt, context) => {
       const start = Date.now()
       const retryParams = paramsFromContext(context)
+      debugger
       captureRequest(retryParams)
       onAttempt(attempt, start, retryParams.max_tokens)
 
@@ -861,6 +863,7 @@ export async function* executeNonStreamingRequest(
 
       try {
         // biome-ignore lint/plugin: non-streaming API call
+        debugger
         return await anthropic.beta.messages.create(
           {
             ...adjustedParams,
@@ -1028,6 +1031,7 @@ async function* queryModel(
   // Check cheap conditions first — the off-switch await blocks on GrowthBook
   // init (~10ms). For non-Opus models (haiku, sonnet) this skips the await
   // entirely. Subscribers don't hit this path at all.
+  debugger
   if (
     !isClaudeAISubscriber() &&
     isNonCustomOpusModel(options.model) &&
@@ -1263,6 +1267,7 @@ async function* queryModel(
   })
 
   queryCheckpoint('query_message_normalization_start')
+  debugger
   let messagesForAPI = normalizeMessagesForAPI(messages, filteredTools)
   queryCheckpoint('query_message_normalization_end')
 

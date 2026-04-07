@@ -844,6 +844,7 @@ async function* queryLoop(
               }
             }
 
+            debugger
             if (
               streamingToolExecutor &&
               !toolUseContext.abortController.signal.aborted

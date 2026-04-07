@@ -263,6 +263,7 @@ export class StreamingToolExecutor {
    * Execute a tool and collect its results
    */
   private async executeTool(tool: TrackedTool): Promise<void> {
+    debugger
     tool.status = 'executing'
     this.toolUseContext.setInProgressToolUseIDs(prev =>
       new Set(prev).add(tool.id),

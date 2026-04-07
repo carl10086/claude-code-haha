@@ -1,0 +1,41 @@
+{
+  "skill_name": "understand",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "先理解一下我的需求：我想给这个函数加个缓存层，但不要改变它的接口。",
+      "expected_output": "技能应触发，输出理解确认格式",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "确认你的理解，我担心你会误解我的意思——我不想改 API，只想在内部加缓存。",
+      "expected_output": "技能应触发，输出理解确认格式",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "不对，我刚才没说清楚，我真正要的是只改实现不改接口。重新理解一下。",
+      "expected_output": "技能应触发，输出更新后的理解确认",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "帮我把这个 Python 脚本重构成 TypeScript，保持一样的逻辑。",
+      "expected_output": "技能不应触发，直接执行任务",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "这个登录 bug 怎么修？用户说验证码收不到。",
+      "expected_output": "技能不应触发，直接回答问题",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "写个测试覆盖 getUserById 这个函数，边界情况也要测到。",
+      "expected_output": "技能不应触发，直接写测试",
+      "files": []
+    }
+  ]
+}
